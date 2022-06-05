@@ -63,7 +63,8 @@ body {
 				    numGuesses: guess
 				});
 				
-				response.open("POST", 'http://localhost:8080/result')
+				//response.open("POST", 'http://localhost:8080/result');
+				response.open("POST", 'https://guessing-game-5bu27xjxoq-ue.a.run.app/result');
 				response.setRequestHeader('Content-Type', 'application/json');
 				
 				response.send(json);
